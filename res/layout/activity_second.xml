@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_weight="1"
+         />
+
+    
+   
+    <LinearLayout 
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        
+      >
+      <RadioGroup 
+          android:id="@+id/rg_home"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+         >
+         <RadioButton 
+             android:id="@+id/rb_lamp"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:layout_gravity="center"
+              android:gravity="center"
+             android:button="@null"
+             android:text="灯"
+             android:textColor="#012f15"
+             android:textSize="15sp"
+             android:background="@drawable/light"
+            /> 
+           <RadioButton 
+             android:id="@+id/rb_Airconditioner"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:layout_gravity="center"
+              android:gravity="center"
+             android:button="@null"
+             android:text="空调"
+             android:textColor="#ff0000"
+             android:textSize="15sp"
+             android:background="@drawable/aircondition1"
+            /> 
+            、
+             <RadioButton 
+             android:id="@+id/rb_curtain"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:button="@null"
+             android:text="窗帘"
+             android:textColor="#012f15"
+             android:textSize="15sp"
+             android:background="@drawable/curtain1"
+            /> 
+            
+              <RadioButton 
+             android:id="@+id/rb_shushidu"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:layout_gravity="center"
+              android:gravity="center"
+             android:button="@null"
+             android:text="舒适度"
+             android:textColor="#ff0000"
+             android:textSize="15sp"
+             android:background="@drawable/sensor1"
+            /> 
+          
+          
+           </RadioGroup>  
+          </LinearLayout>
+
+      <ImageView
+          android:id="@+id/imgv_overtab"
+          android:layout_width="80dp"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/red" />
+    
+    <!-- 导航和视图的分割线 -->
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f00"
+        android:layout_above="@id/layout_bottom"
+        />
+    
+    
+    
+    
+    
+</RelativeLayout>

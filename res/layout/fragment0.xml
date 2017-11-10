@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/off" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+      
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:checked="false"
+            android:textOff="房间灯开"
+            android:textOn="房间灯关"
+            android:textColor="#fff000"
+            android:onClick="LightControl" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOff="客厅灯开"
+            android:textOn="客厅灯关" 
+            android:textColor="#ff0000"
+            android:onClick="LightControl"/>
+
+    </LinearLayout>
+  
+</RelativeLayout>

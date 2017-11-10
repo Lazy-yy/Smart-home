@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fr1" >
+    
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:contentDescription="空调状态"
+        android:scaleType="fitXY"
+        android:src="@drawable/airconditioner" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="开"
+        android:textColor="#ff00"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/Koff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="关"
+        android:textColor="#fff000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/Kzhileng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="32dp"
+        android:text="制冷"
+        android:textColor="#404040"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/Kchushi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Kzhileng"
+        android:layout_alignBottom="@+id/Kzhileng"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text="除湿"
+        android:textColor="#000fff"
+        android:textSize="30sp" />
+
+</RelativeLayout>
